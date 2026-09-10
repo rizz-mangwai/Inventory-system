@@ -1,14 +1,4 @@
-"""
-AI Assistant – helps the shop owner see which products are moving fast,
-which are stuck on the shelf, which are about to run out, which are
-sitting in excess, and how much to reorder.
 
-This is "rule-based AI": no external ML library needed. It works out
-each product's sales velocity (average units sold per day) from the
-sales history, then uses that number to answer five business
-questions. That's exactly the kind of thing a real store manager
-would do by hand with a spreadsheet — this just automates it.
-"""
 
 from datetime import datetime, timedelta
 

@@ -1,10 +1,3 @@
-"""
-Adds a full set of electronics categories to your EXISTING data —
-safe to run even if you already have products/sales saved.
-Won't create duplicates if a category name already exists.
-
-Run with: python add_electronics_categories.py
-"""
 
 from database.db_manager import DatabaseManager
 from services.category_service import CategoryService

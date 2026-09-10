@@ -1,6 +1,4 @@
-"""
-Helper functions for input validation and display.
-"""
+
 
 import datetime
 def input_int(prompt, min_val=None, max_val=None, default=None):

@@ -1,6 +1,4 @@
-"""
-Simple product service – works with dictionaries, not SQL.
-"""
+
 
 from datetime import datetime
 

@@ -1,7 +1,3 @@
-"""
-Inventory service – handles stock levels only.
-All AI Assistant logic lives in services/ai_assistant.py
-"""
 
 from datetime import datetime
 

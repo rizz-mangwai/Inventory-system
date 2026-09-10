@@ -1,11 +1,4 @@
-"""
-Auth service – handles login and user roles (manager / employee).
 
-Note for a real production app: passwords would be hashed, not stored
-as plain text. For this school project, plain text keeps the code
-simple to read and understand, but it would NOT be safe to use for a
-real shop's actual staff logins.
-"""
 
 
 class AuthService:

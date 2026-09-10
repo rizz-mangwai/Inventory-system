@@ -1,11 +1,3 @@
-"""
-Smart Electronic Inventory Management System – CLI version.
-Uses simple JSON storage, no external dependencies.
-
-All the actual menu screens live in the menus/ package (one file per
-menu, same idea as services/ being split up). This file only creates
-the services and routes your top-level menu choice to the right one.
-"""
 
 import sys
 from database.db_manager import DatabaseManager
