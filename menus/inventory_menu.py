@@ -1,17 +1,17 @@
-
-
 from utils.helpers import input_int, print_header, print_table
 
 
-def inventory_menu(inv_service, prod_service):
+def inventory_menu(inv_service, prod_service, role="manager"):
     while True:
         print_header("INVENTORY MANAGEMENT")
         print("1. View Current Inventory")
-        print("2. Update Stock (Restock)")
+        print("2. Update Stock (Restock)   [Manager only]")
         print("3. View Low Stock Products")
         print("4. Back")
         choice = input("Enter choice: ").strip()
-        if choice == '1':
+        if choice == '2' and role != "manager":
+            print("Access denied - Manager only.")
+        elif choice == '1':
             view_inventory(inv_service)
         elif choice == '2':
             restock(inv_service, prod_service)

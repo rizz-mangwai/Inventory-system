@@ -1,17 +1,18 @@
-
-
 from utils.helpers import input_int, input_non_empty, print_header
 
-def customer_menu(cs):
+
+def customer_menu(cs, role="manager"):
     while True:
         print_header("CUSTOMER MANAGEMENT")
         print("1. Add Customer")
         print("2. View Customers")
-        print("3. Update Customer")
-        print("4. Delete Customer")
+        print("3. Update Customer      [Manager only]")
+        print("4. Delete Customer      [Manager only]")
         print("5. Back")
         choice = input("Enter choice: ").strip()
-        if choice == '1':
+        if choice in ('3', '4') and role != "manager":
+            print("Access denied - Manager only.")
+        elif choice == '1':
             name = input_non_empty("Customer name: ")
             contact = input("Contact info: ").strip()
             if cs.add(name, contact):

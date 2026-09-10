@@ -3,17 +3,19 @@
 from utils.helpers import input_int, input_non_empty, print_header, print_table
 
 
-def product_menu(product_service, category_service, supplier_service):
+def product_menu(product_service, category_service, supplier_service, role="manager"):
     while True:
         print_header("PRODUCT MANAGEMENT")
-        print("1. Add Product")
+        print("1. Add Product          [Manager only]")
         print("2. View All Products")
         print("3. Search Product")
-        print("4. Update Product")
-        print("5. Delete Product")
+        print("4. Update Product       [Manager only]")
+        print("5. Delete Product       [Manager only]")
         print("6. Back to Main")
         choice = input("Enter choice: ").strip()
-        if choice == '1':
+        if choice in ('1', '4', '5') and role != "manager":
+            print("Access denied - Manager only.")
+        elif choice == '1':
             add_product(product_service, category_service, supplier_service)
         elif choice == '2':
             view_products(product_service)

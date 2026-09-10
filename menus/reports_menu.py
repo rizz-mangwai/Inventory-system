@@ -1,6 +1,5 @@
-
-
 from utils.helpers import print_header
+
 
 def reports_menu(sales_service, inventory_service, ai_assistant):
     while True:

@@ -7,7 +7,7 @@ class AIAssistant:
     def __init__(self, db):
         self.db = db
 
-    # ---------- Shared helper ----------
+   
     def _sales_in_period(self, days):
         """Return {product_id: total_units_sold} for the last `days` days."""
         cutoff = (datetime.now() - timedelta(days=days)).strftime("%Y-%m-%d")

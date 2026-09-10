@@ -1,4 +1,3 @@
-
 import sys
 from database.db_manager import DatabaseManager
 from services.product_service import ProductService
@@ -20,7 +19,7 @@ from menus.inventory_menu import inventory_menu, show_alerts
 from menus.reports_menu import reports_menu
 from menus.ai_assistant_menu import ai_assistant_menu
 
-# Menu choices only a Manager is allowed to open
+
 MANAGER_ONLY_CHOICES = {'2', '3', '8', '9'}
 
 

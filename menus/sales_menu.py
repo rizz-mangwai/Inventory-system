@@ -1,5 +1,3 @@
-
-
 from utils.helpers import input_int, input_float, input_date, print_header, print_table
 
 
