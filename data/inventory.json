@@ -1,0 +1,20 @@
+{
+    "products": [],
+    "categories": [],
+    "suppliers": [],
+    "customers": [],
+    "sales": [],
+    "inventory": [],
+    "users": [
+        {
+            "username": "admin",
+            "password": "admin123",
+            "role": "manager"
+        },
+        {
+            "username": "staff",
+            "password": "staff123",
+            "role": "employee"
+        }
+    ]
+}

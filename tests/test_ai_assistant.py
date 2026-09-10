@@ -1,6 +1,4 @@
-"""
-Tests for AIAssistant. Run with: python -m pytest tests/
-"""
+
 
 import os
 from datetime import datetime, timedelta

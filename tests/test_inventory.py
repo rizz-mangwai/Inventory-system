@@ -1,6 +1,4 @@
-"""
-Tests for InventoryService. Run with: python -m pytest tests/
-"""
+
 
 import os
 from database.db_manager import DatabaseManager

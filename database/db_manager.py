@@ -12,6 +12,7 @@ EMPTY_DATA = {
     "customers": [],
     "sales": [],
     "inventory": [],
+    "users": [],
 }
 
 
@@ -90,7 +91,13 @@ class DatabaseManager:
 
     def set_inventory(self, inventory):
         self.data["inventory"] = inventory
-        self.save_data()                
+        self.save_data()   
 
+    def get_users(self):
+        return self.data.get("users", [])
+
+    def set_users(self, users):
+        self.data["users"] = users
+        self.save_data()    
 
 
